@@ -6,7 +6,7 @@
 
 ## Overview
 
-A home Security Operations Centre built using VirtualBox and Wazuh as the SIEM. The lab consists of three virtual machines — a Wazuh server, a monitored Windows 10 endpoint, and a Kali Linux attack machine — connected via an isolated NAT network.
+A home Security Operations Centre built using VirtualBox and Wazuh as the SIEM. The lab consists of three virtual machines, a Wazuh server, a monitored Windows 10 endpoint, and a Kali Linux attack machine, they connected via an isolated NAT network.
 
 The goal was to get hands-on with real alert triage, vulnerability detection, and incident documentation in an environment that mirrors how a SOC analyst would actually work, rather than just studying the theory.
 
@@ -94,7 +94,7 @@ Three open ports were identified:
 | 139/tcp | NetBIOS-SSN | Legacy Windows networking, enumeration risk |
 | 445/tcp | Microsoft SMB | File sharing, brute force and relay attack surface |
 
-This demonstrates the practical value of host-based firewalls and directly relates to the SMB Signing vulnerability documented in the [Vulnerability Assessment Report](https://github.com/Jpinkerton-Sec/CyberSec-Portfolio).
+This demonstrates the practical value of host-based firewalls and directly relates to the SMB Signing vulnerability documented in the [Vulnerability Assessment Report](https://github.com/Jpinkerton-Sec/Vulnerability-Assessment).
 
 ---
 
@@ -102,7 +102,7 @@ This demonstrates the practical value of host-based firewalls and directly relat
 
 A default Windows 10 Home installation is significantly under-hardened out of the box. A 27% CIS benchmark score, multiple unpatched CVEs, and three exposed network services on a freshly deployed endpoint illustrates why baseline hardening and continuous vulnerability management are foundational to any security programme.
 
-From a SOC perspective, the most valuable part of this lab was learning to triage alerts in context rather than in isolation. The explorer.exe crash (Report 002) is a good example — on its own it looks like a stability issue, but in a real environment it would warrant a quick check for process injection indicators before being closed.
+From a SOC perspective, the most valuable part of this lab was learning to triage alerts in context rather than in isolation. The explorer.exe crash (Report 002) is a good example, on its own it looks like a stability issue, but in a real environment it would warrant a quick check for process injection indicators before being closed.
 
 ---
 
