@@ -60,6 +60,8 @@ Wazuh ran the CIS Microsoft Windows 10 Enterprise Benchmark v4.0.0 against the e
 **System Event Monitoring**
 Windows application error events were captured and correlated against GDPR and GPG 13 compliance frameworks automatically by Wazuh's ruleset.
 
+_Note: Network reconnaissance and SMB brute force attempts conducted from the Kali VM did not generate Wazuh alerts on this configuration, as Windows 10 Home does not log these activities to the Windows Event Log by default. Kali attack output is documented separately in the Network Reconnaissance section._
+
 ---
 
 ## Incident Reports
